@@ -88,7 +88,7 @@ jobs:
           fi
       - run: npx cap sync android
       - name: Inject Native Code
-        run: node scripts/inject_native.js
+        run: node scripts/inject_native.cjs
       - name: Setup Android SDK
         uses: android-actions/setup-android@v2
       - name: Decode keystore
